@@ -1,0 +1,52 @@
+1) De quais formas você sabe utilizar CSS para estilizar suas páginas?
+Sei utilizar CSS puro e tenho habilidades com Tailwind CSS e com bibliotecas de componentes como MUI. Também sei utilizar Styled Components.
+
+2) O que é um seletor CSS? Quais tipos de seletores você conhece?
+    Um seletor CSS nos permite selecionar elementos HTML para que possamos aplicar estilos a eles.
+Há seletores para o tipo de elemento, ids, classes, seletor universal, e seletores para tomar os descendentes, filhos, irmãos, elementos com um certo atributo, e ainda pseudo-seletores.
+
+3) O que faz este seletor: `div > p`?
+Seleciona todos os <p> que são filhos diretos de uma <div>
+
+4) Qual a diferença entre: `div > p`, `div p` e `div + p` , se é que há alguma?
+    -`div > p`: Seleciona todos os <p> que são filhos DIRETOS de uma <div>
+    -`div p`: Seleciona todos os <p> que são descendentes de uma <div>
+    -`div + p`: Seleciona todos os <p> que são o próximo irmão de uma <div>
+
+5) Quais valores você conhece para a propriedade `display`? Explique cada um deles.
+    - none: o elemento se torna invisível e some do documento, sem ocupar nenhum espaço e nem permite interação.
+    - inline: o elemento é apresentado na linha e não é afetado por propriedades de width e height. Não inicia uma nova linha e toma apenas a largura necessária.   
+    - block: o elemento é apresentado como um bloco, iniciando em uma nova linha e tomando toda a largura  disponível.
+    - inline-block: semelhante ao inline, mas pode ter suas largura e altura alteradas.
+    - flex: gera um flex container como um bloco e seus filhos se tornam flex items.
+    - grid: semelhante ao anterior, mas gera um grid container com elementos filhos como grid items.
+    - inline-flex e inline-grid: similar a flex e grid, mas em vez de blocos, geram containers inline.
+
+
+6) Quais valores você conhece para a proprieadade `position`? Explique cada um deles.
+    - static: é o valor default e não é afetado pelas propriedades top, bottom, left e right.
+    - relative: é um posicionamento relativo a posição normal do elemento no documento.
+    - absolute: é um posicionamento relativo ao seu predecessor mais próximo que esteja também posicionado (não tem posição static). Caso não haja um predecessor posicionado, sua posição é relativa ao body. Um elemento com posição absolute é removido do flow normal do documento.
+    - fixed:  é um posicionamento relativo ao  viewport, o que mantém o elemento no mesmo lugar (fixo) mesmo se a página for "scrollada".
+    - sticky: similar ao relative até que a página seja "scrollada" até um certo limite a partir do qual o elemento passa  a agir como fixed.
+
+
+7) Se um usuário acessa uma página de um computador e vê um título com uma fonte, e outro usuário visualiza esta mesma página em um outro computador, e vê o mesmo título com uma fonte diferente, o que pode ter acontecido? Como você resolveria este problema?
+
+
+8) Qual a diferença entre `font-size: 10px`, `font-size: 10em`, `font-size: 10rem` e `font-size: 10pt`?
+A diferença está na unidade de medida:
+    -10px significa que, de fato, o tamanho da fonte será de 10 pixels; 
+    -10rem significa que o tamanho da fonte será 10 vezes o tamanho da fonte do 'root element'. Se esse tamanho for 16px, então 10rem corresponde a 160px;
+    -10em é relativo ao  tamanho da fonte do elemento pai. Se, por exemplo, o elemento pai tiver a fonte de tamanho 10px, 10em corresponderá a 100px;
+    -10pt é uma outra unidade de medida (pontos), geralmente utilizado em tipografia. Cada pt corresponde a 1/72 in, então 10pt corresponde a um tamanho de 10/72 polegadas.
+
+9) De 1 a 5, diga quanto de cada um desses recursos você conhece:
+    - Flex box -> 5
+    - CSS grid -> 4
+    - variáveis CSS -> 5
+    - viewport -> 5
+
+10) Quais sites você utiliza para consultar documentação de CSS? E como saber quais browsers suportam quais recursos?
+    Documentação: MDN Web Docs ou W3 Schools
+    Suporte: Can I use (https://caniuse.com/)

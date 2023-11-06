@@ -1,0 +1,21 @@
+:root {
+  --bluish-grey: #546e7a;
+}
+
+body {
+  background-image: url(./polygon-scatter-haikei.svg);
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100dvh;
+}
+
+.selecionado {
+  color: #1976d2;
+  font-style: italic;
+}
+
+.nao-selecionado {
+  color: black;
+  font-style: normal;
+}

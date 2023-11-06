@@ -1,0 +1,117 @@
+:root {
+	--primary-color: #002d71;
+	--bg-color: #f2f2f2;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	position: relative;
+	background-color: var(--bg-color);
+}
+
+aside {
+	position: fixed;
+	height: 100vh;
+	width: 20rem;
+	padding: 10px;
+}
+
+label,
+input {
+	display: block;
+}
+
+input,
+select {
+	width: 100%;
+	padding: 5px 3px;
+	border-radius: 5px;
+	border: solid var(--primary-color) 1px;
+	margin: 2px 0 10px;
+}
+
+input:focus {
+	outline: none;
+}
+
+select:focus-visible {
+	border: solid var(--primary-color) 2px;
+}
+
+button {
+	margin-top: 10px;
+	padding: 0.75rem 1.25rem;
+	float: right;
+	color: white;
+	background-color: var(--primary-color);
+	cursor: pointer;
+	border-radius: 5px;
+	border: none;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+main {
+	margin-left: 20rem;
+	width: calc(100vw - 20rem);
+	display: grid;
+  place-items: center;
+	grid-template-columns: repeat(1, minmax(200px, 1fr));
+	gap: 20px;
+}
+
+.image {
+	background-size: cover;
+	max-width: 500px;
+	width: 100%;
+	aspect-ratio: 1;
+}
+
+/* To avoid same image due to browse caching */
+.image:nth-child(1) {
+	background-image: url(https://picsum.photos/500?random=1);
+}
+.image:nth-child(2) {
+	background-image: url(https://picsum.photos/500?random=2);
+}
+.image:nth-child(3) {
+	background-image: url(https://picsum.photos/500?random=3);
+}
+.image:nth-child(4) {
+	background-image: url(https://picsum.photos/500?random=4);
+}
+.image:nth-child(5) {
+	background-image: url(https://picsum.photos/500?random=5);
+}
+.image:nth-child(6) {
+	background-image: url(https://picsum.photos/500?random=6);
+}
+.image:nth-child(7) {
+	background-image: url(https://picsum.photos/500?random=7);
+}
+.image:nth-child(8) {
+	background-image: url(https://picsum.photos/500?random=8);
+}
+.image:nth-child(9) {
+	background-image: url(https://picsum.photos/500?random=9);
+}
+.image:nth-child(10) {
+	background-image: url(https://picsum.photos/500?random=10);
+}
+
+@media (min-width: 739px) {
+	main {
+		grid-template-columns: repeat(2, minmax(200px, 1fr));
+	}
+}
+@media (min-width: 1405px) {
+	main {
+		grid-template-columns: repeat(5, minmax(200px, 1fr));
+	}
+}
