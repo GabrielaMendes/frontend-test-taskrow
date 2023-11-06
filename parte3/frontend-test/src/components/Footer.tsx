@@ -15,9 +15,14 @@ function Footer() {
       }}
       elevation={3}
     >
-      <Link href="#" rel="noopener" target="_blank" variant="body2">
+      <Link
+        href="https://github.com/GabrielaMendes/frontend-test-taskrow/tree/main/parte3/frontend-test"
+        rel="noopener"
+        target="_blank"
+        variant="body2"
+      >
         Documentação no GitHub
-        <LaunchIcon fontSize="inherit" sx={{marginLeft: 0.5}}/>
+        <LaunchIcon fontSize="inherit" sx={{ marginLeft: 0.5 }} />
       </Link>
     </Paper>
   );

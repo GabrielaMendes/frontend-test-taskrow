@@ -1,7 +1,11 @@
 import { useMoveBack } from "../hooks/useMoveBack";
-import { Box, Button, Paper, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import WarningIcon from "@mui/icons-material/Warning";
+
 function PageNotFound() {
   const moveBack = useMoveBack();
 

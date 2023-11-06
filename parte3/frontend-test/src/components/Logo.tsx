@@ -1,15 +1,29 @@
+import { Link } from "react-router-dom";
+import { styled } from "styled-components";
 import Typography from "@mui/material/Typography";
 
 type LogoProps = {
   mobile?: boolean;
 };
 
+const StyledLink = styled(Link)`
+  color: inherit;
+  text-decoration: none;
+`;
+
 function Logo({ mobile = false }: LogoProps) {
   if (mobile) {
     return (
       <Typography
         variant="h6"
-        sx={{ my: 2, letterSpacing: "0.15em", fontWeight: "bold" }}
+        component={StyledLink}
+        to="/"
+        sx={{
+          display: {
+            letterSpacing: "0.15em",
+            fontWeight: "bold",
+          },
+        }}
       >
         GRUPOSAPP
       </Typography>
@@ -19,7 +33,8 @@ function Logo({ mobile = false }: LogoProps) {
   return (
     <Typography
       variant="h6"
-      component="div"
+      component={StyledLink}
+      to="/"
       sx={{
         flexGrow: 1,
         display: {

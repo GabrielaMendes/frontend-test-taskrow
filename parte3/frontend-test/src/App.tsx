@@ -6,6 +6,7 @@ import Grupos from "./pages/Grupos";
 import Cadastro from "./pages/Cadastro";
 import Grupo from "./pages/Grupo";
 import PaginaNaoEncontrada from "./pages/PaginaNaoEncontrada";
+
 function App() {
   return (
     <GruposProvider>
@@ -18,7 +19,7 @@ function App() {
               <Route path=":id" element={<Grupo />} />
             </Route>
             <Route path="cadastro" element={<Cadastro />} />
-          <Route path="*" element={<PaginaNaoEncontrada />} />
+            <Route path="*" element={<PaginaNaoEncontrada />} />
           </Route>
         </Routes>
       </BrowserRouter>

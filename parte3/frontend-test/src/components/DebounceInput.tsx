@@ -1,5 +1,5 @@
-import Input, { InputProps } from "@mui/material/Input";
 import { useRef } from "react";
+import Input, { InputProps } from "@mui/material/Input";
 
 type DebounceProps = {
   handleDebounce: (value: string) => void;

@@ -51,7 +51,12 @@ export default function DrawerAppBar(props: Props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Logo mobile={true} />
+      <Typography
+        variant="h6"
+        sx={{ my: 2, letterSpacing: "0.15em", fontWeight: "bold" }}
+      >
+        GRUPOSAPP
+      </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -91,18 +96,7 @@ export default function DrawerAppBar(props: Props) {
           <Box
             sx={{ display: { xs: "block", sm: "none", marginLeft: "auto" } }}
           >
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{
-                display: {
-                  letterSpacing: "0.15em",
-                  fontWeight: "bold",
-                },
-              }}
-            >
-              GRUPOSAPP
-            </Typography>
+            <Logo mobile={true} />
           </Box>
 
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
