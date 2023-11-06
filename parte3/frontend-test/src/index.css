@@ -10,6 +10,10 @@ body {
   height: 100dvh;
 }
 
+a {
+  text-decoration: none;
+}
+
 .selecionado {
   color: #1976d2;
   font-style: italic;

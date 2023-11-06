@@ -54,6 +54,7 @@ function Home() {
           icon={<Diversity3SharpIcon color="primary" sx={{ fontSize: 50 }} />}
           numero={totalGrupos}
           label="grupos"
+          to="/grupos"
         />
         <InfoCard
           icon={<GroupIcon color="primary" sx={{ fontSize: 50 }} />}

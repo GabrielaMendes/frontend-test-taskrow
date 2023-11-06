@@ -9,7 +9,7 @@ type BuscaInputType = {
 function BuscaInput({ onBusca }: BuscaInputType) {
   return (
     <Paper
-      component="form"
+      component="div"
       sx={{
         p: "2px 4px",
         display: "flex",

@@ -8,7 +8,6 @@ type LogoProps = {
 
 const StyledLink = styled(Link)`
   color: inherit;
-  text-decoration: none;
 `;
 
 function Logo({ mobile = false }: LogoProps) {
